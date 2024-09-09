@@ -1,0 +1,15 @@
+<div class="grid gap-3 grid-cols-1 sm:grid-cols-3 md:grid-cols-5">
+
+    <!-- @for (pokemon of '123456789012'.split(''); track $index) {
+        <app-pokemon-card></app-pokemon-card>
+    } -->
+
+    @for (pokemon of pokemons(); track pokemon.id) {
+        <app-pokemon-card [pokemon]="pokemon"></app-pokemon-card>
+    }
+
+    <!-- <div class="col-span-5 text-center border-white h-28 flex justify-center item-center" >
+        NO hay pokemons
+    </div> -->
+
+</div>
